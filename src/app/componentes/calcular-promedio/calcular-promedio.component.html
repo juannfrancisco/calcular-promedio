@@ -1,0 +1,49 @@
+<div class="container-promedio">
+<h3>Componente Calculo de Promedio</h3>
+<hr/>
+
+<h1>Cursos 2018</h1>
+
+<ul>
+  <li *ngFor="let curso of cursos"> {{course}}</li>
+</ul>
+
+<div class="row">
+    <div class="col-8" > 
+
+        <form>
+            <div class="form-group">    
+                <input type="number" class="form-control" name="idNota1" [(ngModel)]="nota1" placeholder="Nota 1">
+            </div>
+          
+            <div class="form-group">
+                <input type="number" class="form-control" name="idNota1" [(ngModel)]="nota2" placeholder="Nota 2">
+            </div>
+          
+            <div class="form-group">
+                <input type="number" class="form-control" name="idNota1" [(ngModel)]="nota3" placeholder="Nota 3">
+            </div>
+          
+            <div class="form-group">
+                <input type="number" class="form-control" name="idNota1" [(ngModel)]="nota4" placeholder="Nota 4">
+            </div>
+          
+            <button type="submit" class="btn btn-primary" (click)="calcularPromedio()">Calcular</button>
+            
+          
+          </form>
+
+    </div>
+
+    <div class="col-4" >
+
+        <h4>Promedio</h4>
+        Su promedio de notas es : 
+        <h1>{{ promedio }}</h1>
+      
+    </div>
+
+</div>
+
+
+</div>
